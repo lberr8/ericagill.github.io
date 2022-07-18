@@ -1,0 +1,122 @@
+body {
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+
+
+/* Styles for the shopping cart container */
+
+.shopping-cart-container {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+  font-family: 'Voltaire', Georgia, sans-serif;
+}
+
+
+
+/*--------------------------------------------------------------
+Styles that apply to the Cart Items
+--------------------------------------------------------------*/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bi {
+  cursor: pointer;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: black;
+}
+.removeAll {
+  background-color: gray;
+}
+.bi-x-lg {
+  color: black;
+  font-weight: bold;
+}
+
+/**
+* ! style rules for shopping-cart
+**/
+
+.shop-cart {
+  display: grid;
+  grid-template-rows: repeat(1, 220px);
+  justify-content: start;
+  gap: 15px;
+  grid-auto-rows:repeat(10, 220px);
+}
+
+/**
+* ! style rules for cart-item
+**/
+
+.cart-item {
+  font-family: 'Voltaire', Georgia, sans-serif;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  display: flex;
+}
+
+.cart-item img {
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.details h3 {
+  width: 50%; 
+  background-color: #212529;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 6px;
+
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.title-price {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: 5px;
+  gap: 20px;
+}
+
+
+.cart-item-price {
+  padding: 3px 6px;
+}
+
