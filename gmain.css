@@ -1,0 +1,358 @@
+
+body {
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 40px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Voltaire', Georgia, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+h2 {
+    font-family: 'Voltaire', Georgia, sans-serif;
+    font-size: 35px;
+    text-align: center;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+  }
+
+   /* Change the color of links on hover */
+   .topnav a:hover {
+    background-color: rgb(88, 88, 88);
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+  }
+
+    /* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+    
+  }
+
+    /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+    @media screen and (max-width: 600px) {
+        .topnav a, .topnav input[type=text] {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type=text] {
+          border: 1px solid #ccc;
+        }
+      }
+
+    /* Centres logo */
+        .main-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+     /* moves logo down on page by adding padding */
+  .logo-black {
+    padding: 150px 30px 100px 30px;
+  }
+
+  /* sets background image and colour */
+  .home-main {
+    background-image: url(../images/Faith-Image-Home.jpg);
+    background-color: #030303;
+    background-repeat: no-repeat;
+    height: 900px;
+    background-size: cover;
+   }
+
+      /* formatting for Gallery*/
+      .home-gallery {
+        background-color: #1a1a1a;
+        color: rgb(224, 224, 224);  
+        text-align: center;
+        flex-flow: wrap;
+        padding: 50px 50px 50px 50px;
+        font-family: 'Raleway', sans-serif;
+        font-style: bold;
+        font-size: 20px;
+      }
+
+      .gallery-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    
+       .g-image {
+        padding: 5px 5px 5px 5px;
+       }
+       
+
+/* 
+
+/*--------------------------------------------------------------
+Base styles that apply to all menus 
+--------------------------------------------------------------*/
+
+.menu-section {
+	border-bottom: 1px solid hsl(0, 0%, );
+    font-family: 'Lato', sans-serif;
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: hsl(0, 0%, 15%);
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .6em 1em;
+}
+
+.menu li a:hover {
+	background: hsl(0, 0%, 25%);
+}
+
+
+/*--------------------------------------------------------------
+Styles that apply to Main Menu- Single Nav 
+--------------------------------------------------------------*/
+
+.single-nav {
+    padding:0;
+    margin:0;
+    display: inline-flex;
+    flex-direction: row;
+    position:fixed;
+    width:100%;
+}
+
+
+.single-nav ul {
+    display: inline-flex;
+    width:100%;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 30em) {
+ 
+    .single-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    
+    .single-nav li {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+}
+
+input, .search-btn {
+    font-family: 'Lato', sans-serif;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding:5px;
+    flex-wrap: wrap;
+}
+.search-btn:hover {
+	background: rgb(77, 77, 85);
+    color:beige;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+    font-size: 30px;
+    padding: 0;
+    border-radius: 5px;
+  }
+  
+  .cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding:5px;
+    border-radius: 5px;
+  }
+
+/*--------------------------------------------------------------
+Styles that apply to drop-down menu part
+--------------------------------------------------------------*/
+
+
+li.has-children > a {
+	padding-right: 0;
+}
+
+.single-nav ul ul {
+	display: none;
+	position: absolute;
+	z-index:100;
+}
+
+.single-nav ul ul li {
+    flex: 1 1 auto; 
+}
+
+.single-nav ul ul li a {
+    padding-left: 2em;
+}
+
+
+.dropdown-toggle {
+	margin: 0;
+	padding: 0 .5em;
+	border: 0;
+	font-family: 'FontAwesome';
+	content: "";
+	text-transform: lowercase; 
+	background-color: transparent;
+}
+
+.dropdown-toggle:after {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 42px;
+	color: white;
+	content: "\f107";
+	line-height: 1em;	
+}
+
+.dropdown-toggle:hover,
+	.dropdown-toggle:focus {
+	background: hsl(0, 0%, 25%);
+}
+
+.dropdown-toggle.toggle-on:after {
+	content: "\f106";
+}
+
+/*--------------------------------------------------------------
+Header styles 
+--------------------------------------------------------------*/
+
+.header-background {
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    background: black;
+    background-image: url(../images/Faith-Image-Home.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    z-index: 2;
+}
+
+.site-title {
+    font-family: 'Voltaire', Georgia, sans-serif;
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    color: black;
+}
+
+
+@media screen and (min-width: 44.44em) {
+    .site-title {
+        font-size: 2em;
+    }
+}
+    
+@media screen and (min-width: 50em) {
+    .site-title {
+        font-size: 2.5em;
+    }
+}
+
+.site-title a {
+    color: hsl(5, 45%, 95%);
+    text-decoration: none;
+}
+
+.site-title a:hover {
+    text-decoration: underline;
+} */
+
+/*--------------------------------------------------------------
+Styles that apply to the Footer with social media menu 
+--------------------------------------------------------------*/
+
+
+.social-menu li a:before {
+    font-family: 'Fontawesome';
+    -webkit-font-smoothing: antialiased;
+    content: '\f08e';
+}
+
+/* link to the the generic site, add individual's profile link */
+
+
+.social-menu li a[href*="facebook.com"]::before { content: '\f09a'; }
+
+.social-menu li a[href*="instagram.com"]::before { content: '\f16d'; }
+
+.social-menu li a[href*="twitter.com"]::before { content: '\f099'; }
+
+.social-menu li a[href*="linkedin.com"]::before { content: '\f0e1'; }
+
+.social-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* change this if we want it centered */
+}
