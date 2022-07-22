@@ -39,6 +39,41 @@ let shopItemsData = [{
   desc: 'print 200x300',
   img: './images/bird-image.jpg'
 
+}, 
+{
+  id: 'item5',
+  name: 'Mountain River',
+  price: 17.99,
+  desc: 'print 400x300',
+  img: './images/river-image.jpg'
+
+},
+
+{
+  id: 'item6',
+  name: 'Sea Lion',
+  price: 15.99,
+  desc: 'print 200x300',
+  img: './images/sealioncropped.jpg'
+
+},
+
+{
+  id: 'item7',
+  name: 'Volcano',
+  price: 16.99,
+  desc: 'print 200x450',
+  img: './images/volcano.jpeg'
+
+},
+
+{
+  id: 'item8',
+  name: 'Squirrel on Tree',
+  price: 12.99,
+  desc: 'print 200x300',
+  img: './images/squirrel.jpeg'
+
 }]
 
 //to add the number to the cart icon
@@ -72,7 +107,7 @@ let generateCartItems = () => {
                 <div id=${id} class="quantity">${item}</div>
                 <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
             </div>
-            <h3>£ ${item * search.price}</h3>
+            <h3>£ ${Math.floor((item * search.price)*100)/100}</h3>
           </div>
         </div>
         `;
@@ -82,7 +117,7 @@ let generateCartItems = () => {
       ShoppingCart.innerHTML = ``;
       label.innerHTML = `
       <h2>Cart is Empty</h2>
-      <a href="homepage2.html">
+      <a href="index.html">
         <button class="HomeBtn">Back to home</button>
       </a>
       `;
@@ -158,7 +193,7 @@ let generateCartItems = () => {
         .reduce((x, y) => x + y, 0);
       // console.log(amount);
       label.innerHTML = `
-      <h2>Total Bill : £ ${amount}</h2>
+      <h2>Total Bill : £ ${Math.round(amount*100)/100}</h2>
       <button class="checkout">Checkout</button>
       <button onclick="clearCart()" class="removeAll">Clear Cart</button>
       `;
