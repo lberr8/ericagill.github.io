@@ -18,18 +18,18 @@ let shopItemsData = [{
 {
   id: 'item2',
   name: 'Marine Turtle',
-  price: 13.99,
+  price: 12.99,
   desc: 'print 120x200',
-  img: './images/turtle-image-cropped.jpg'
+  img: './Images/turtle-image-cropped.jpg'
 
 },
 
 {
   id: 'item3',
   name: 'Pink Moutain',
-  price: 17.99,
+  price: 12.99,
   desc: 'print 200x120',
-  img: './images/pink-mountains-image.jpg'
+  img: './Images/pink-mountains-image.jpg'
 
 }, 
 
@@ -38,16 +38,15 @@ let shopItemsData = [{
   name: 'Colibri Bird',
   price: 12.99,
   desc: 'print 200x300',
-  img: './images/bird-image.jpg'
+  img: './Images/bird-image.jpg'
 
-},
-
+}, 
 {
   id: 'item5',
   name: 'Mountain River',
   price: 17.99,
   desc: 'print 400x300',
-  img: './images/river-image.jpg'
+  img: './Images/river-image.jpg'
 
 },
 
@@ -56,7 +55,7 @@ let shopItemsData = [{
   name: 'Sea Lion',
   price: 15.99,
   desc: 'print 200x300',
-  img: './images/sealioncropped.jpg'
+  img: './Images/sealioncropped.jpg'
 
 },
 
@@ -65,7 +64,7 @@ let shopItemsData = [{
   name: 'Volcano',
   price: 16.99,
   desc: 'print 200x450',
-  img: './images/volcano.jpeg'
+  img: './Images/volcano.jpeg'
 
 },
 
@@ -74,7 +73,7 @@ let shopItemsData = [{
   name: 'Squirrel on Tree',
   price: 12.99,
   desc: 'print 200x300',
-  img: './images/squirrel.jpeg'
+  img: './Images/squirrel.jpeg'
 
 }]
 
