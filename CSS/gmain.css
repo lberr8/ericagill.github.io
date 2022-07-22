@@ -30,6 +30,8 @@ h2 {
     overflow: hidden;
     position: fixed;
     width: 100%;
+    top: 0px;
+    z-index: 1;
 }
 
 /* Style the links inside the navigation bar */
@@ -93,16 +95,21 @@ h2 {
 
      /* moves logo down on page by adding padding */
   .logo-black {
-    padding: 150px 30px 100px 30px;
+    margin: 17px
   }
 
   /* sets background image and colour */
   .home-main {
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    background: black;
     background-image: url(../images/Faith-Image-Home.jpg);
-    background-color: #030303;
-    background-repeat: no-repeat;
-    height: 900px;
+    background-repeat: no-repeat; 
     background-size: cover;
+    z-index: 2;
    }
 
       /* formatting for Gallery*/
