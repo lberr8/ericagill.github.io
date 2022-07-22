@@ -126,33 +126,32 @@ Header styles
 /*--------------------------------------------------------------
 Styles that apply to the Footer with social media menu 
 --------------------------------------------------------------*/
-.menu-section {
+
+
+.social-menu {
 	border-bottom: 1px solid hsl(0, 0%, );
     font-family: 'Raleway', sans-serif;
     background-color: #333;
+    position: fixed;
+    width:100%;
+    bottom:0;
 }
 
-.menu ul {
+.social-menu ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	background-color: #333;
 }
 
-.menu li a {
+.social-menu li a {
 	display: block;
 	text-decoration: none;
 	color: white;
     padding: 14px;
 }
 
-.menu li a:hover {
+.social-menu li a:hover {
 	background:rgb(88, 88, 88);
-}
-
-menu li a.active {
-    background-color: #f1f1f1;
-    color: rgb(0, 0, 0);
 }
 
 .social-menu li a:before {
