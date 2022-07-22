@@ -2,7 +2,7 @@
 This sheet pulls in all the components in order of appearance.
 */
 
-@import url('CSS/accessibility.css');
-@import url('CSS/typography.css');
-@import url('CSS/shop-main-layouts.css');
-@import url('CSS/menus.css');
+@import url('accessibility.css');
+@import url('typography.css');
+@import url('shop-main-layouts.css');
+@import url('menus.css');
