@@ -11,7 +11,7 @@ let shopItemsData = [{
   name: 'Adorable Pug',
   price: 12.99,
   desc: 'print 150x200',
-  img: './images/pet_pug_print.jpg'
+  img: './Images/pet_pug_print.jpg'
 }, 
 
 {
