@@ -5,12 +5,13 @@
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
-    margin: 30px 300px;
+    /* margin: 30px 300px; */
   }
 
     
   /* Hide the images by default */
   .mySlides {
+  display: inline-flex;  /* added 25/07 */
     display: none;
   }
 
@@ -40,6 +41,11 @@
   /* Position the "next button" to the right */
   .next {
     right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
     border-radius: 3px 0 0 3px;
   }
   
@@ -79,6 +85,14 @@
   .column {
     float: left;
     width: 16.66%;
+  }
+
+  /* added 25/07 images for small screen */
+  @media (max-width: 600px) {
+    .column {
+      float: left;
+      width: 33.3%;
+    }
   }
   
   /* Add a transparency effect for thumnbail images */
