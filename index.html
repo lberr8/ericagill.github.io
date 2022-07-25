@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="CSS/homepage2.css" type="text/css" media="all">
+    <link rel="stylesheet" href="CSS/menus.css" type="text/css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -20,17 +21,22 @@
 
 <body>
 
-  <nav class = "topnav">
-    <a class = "active" href = "#home" > Home</a>
-    <a href = "Galleryc.html" > Gallery </a>
-    <a href = "shop.html" > Shop </a>
-    <a href = "cart.html" > Cart </a>
-    <input type = "text" placeholder = "Search..">
+  <nav class="topnav" role="navigation">
+    <a class = "active" href="index.html">Home</a> 
+    <a href= "Galleryc.html">Gallery</a> 
+    <a href="shop.html">Shop</a>
+    <a href="Biocontact.html">Contact</a> 
+    <a href="cart.html" style="float: none; padding: 0px;">
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+    </a>
   </nav>
 
   <div class = "home-main" >
     <div class = "main-logo">
-      <img class = "logo-black" src = "Images/full-logo-black-cropped.png" alt = "Logo" width = "400" height = "250">
+      <img class = "logo-black" src = "Images/full logo black  cropped.png" alt = "Logo" width = "400" height = "250">
     </div>
   </div>
 
@@ -108,8 +114,22 @@
   <div class = "home-shop" id = "home-shop">
   </div>
     
+  <footer id="footer" class="menu-section">
+
+    <nav id="social-menu" class="social-menu" role="navigation">
+        <ul>
+          <li><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+          <li><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+          <li><a href="http://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+          <li><a href="http://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+          
+        </ul>
+    </nav>
+  </footer>
+
   <script type="text/javascript" src="JS/homepage-gallery.js"></script>
   <script type="text/javascript" src="JS/homepage-shop.js"></script>
+  <script type="text/javascript" src="JS/cart.js"></script>
 
 </body>
 </html>
