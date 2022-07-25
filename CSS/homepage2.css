@@ -90,7 +90,7 @@
    }
 
    * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
   
   /* Position the image container (needed to position the left and right arrows) */
@@ -109,10 +109,14 @@
   }
   
   /* Next & previous buttons */
+  .nav-arrows {
+    padding: 30px;
+  }
+  
   .prev,
   .next {
     cursor: pointer;
-    position: absolute;
+    /*position: absolute;*/
     top: 40%;
     width: auto;
     padding: 16px;
@@ -183,3 +187,220 @@
     display:flex;
     flex-direction: column;
     }
+
+  
+
+/*
+Shope styles: This sheet pulls in all the components in order of appearance.
+*/
+
+@import url('accessibility.css');
+@import url('typography.css');
+@import url('shop-main-layouts.css');
+@import url('menus.css');
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+/* shop main layouts items style */
+
+#home-shop-title {
+  text-align: center;
+  flex-flow: wrap;
+  margin: 35px 25px 25px 25px;
+  font-style: bold;
+  font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+}
+  
+.home-shop {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.item {
+  border: 1px solid lightblue; 
+  border-radius: 5px;
+}
+
+.details {
+  font-family: 'Voltaire', Georgia, sans-serif;
+  font-weight: normal;
+  display: flex;
+  flex-direction:column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttons {
+  
+  display:flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-evenly;
+}
+
+.bi-dash-lg {
+  color: red;
+}
+
+.bi-plus-lg {
+  color: darkgreen;
+}
+
+.bi {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
