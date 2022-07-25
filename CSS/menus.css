@@ -6,6 +6,7 @@ Styles that apply to Main Menu .topnav
     overflow: hidden;
     position:fixed;
     width: 100%;
+    z-index: 1000;
 }
   
 /* Style the links inside the navigation bar */
@@ -21,7 +22,7 @@ Styles that apply to Main Menu .topnav
     font-style: bold;
 }
   
-  
+
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: rgb(88, 88, 88);
@@ -64,6 +65,7 @@ Styles that apply to Main Menu .topnav
     color: white;
     padding:5px;
     border-radius: 15px;
+    font-family: 'Raleway', sans-serif;
 }
 
 
