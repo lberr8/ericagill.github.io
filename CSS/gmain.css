@@ -108,9 +108,10 @@ h2 {
     background-repeat: no-repeat; 
     background-size: cover;
     z-index: 2;
+    width: 100%;
    }
 
-   
+
       /* formatting for Gallery*/
       .home-gallery {
         color: rgb(224, 224, 224);  
