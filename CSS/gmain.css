@@ -104,12 +104,13 @@ h2 {
     align-items: flex-end;
     margin-bottom: 10px;
     background: black;
-    background-image: url(../images/Faith-Image-Home.jpg);
+    background-image: url("/Images/Faith-Image-Home.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     z-index: 2;
    }
 
+   
       /* formatting for Gallery*/
       .home-gallery {
         color: rgb(224, 224, 224);  
