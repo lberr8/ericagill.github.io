@@ -4,43 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team project about me</title>
+    <title>About/Contact Me</title>
+    <link rel="stylesheet" href="CSS/gmain.css" type="text/css" media="all">
+    <link rel="stylesheet" href="CSS/aboutmecontactme.css" type="text/css" media="all">
+    <link rel="stylesheet" href="CSS/homepage2.css" type="text/css" media="all">
+    <link rel="stylesheet" href="CSS/menus.css" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- link to social media icons -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
     <!-- link to basket icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Lily+Script+One&family=Voltaire&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Lato:wght@300&family=Lily+Script+One&family=Voltaire&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Raleway:wght@100&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="CSS/gmain.css" type="text/css" media="all">
-    <link rel="stylesheet" href="CSS/aboutmecontactme.css" type="text/css" media="all">
 </head>
+
+
+  </head>
 <body>
     <main>  
     <!-- main-menu -->
 
-      <nav class="topnav" role="navigation">
-        <a href="index.html">Home</a> 
-        <a href= "Galleryc.html">Gallery</a> 
-        <a href="shop.html">Shop</a>
-        <a href="Biocontact.html">Contact</a> 
-        <a href="cart.html" class="active" >
-          <div class="cart">
-            <i class="bi bi-cart2"></i>
-            <div id="cartAmount" class="cartAmount">0</div>
-          </div>
-        </a>
+    <nav id = "main-menu" class="topnav" role="navigation">
+      <a href="index.html">Home</a>
+      <a href= "Galleryc.html">Gallery</a> 
+      <a href="shop.html">Shop</a>
+      <a class = "active" href="Biocontact.html">Contact</a> 
+      <a href="cart.html" style="float: none; padding: 0px;">
+        <div class="cart">
+          <i class="bi bi-cart2"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
+        </div>
+      </a>
+    </nav>
+    
+    <input type="checkbox" id="hamburger-input" class="burger-shower" />
+    <label id="hamburger-menu" for="hamburger-input">
+      <nav id="sidebar-menu">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="Galleryc.html">Gallery</a> </li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a class = "active" href="Biocontact.html">Contact</a> </li>
+          <li><a href="cart.html" style="float: none; padding: 0px;">
+            <div class="cart">
+              <i class="bi bi-cart2"></i>
+              <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+            </a>
+          </li>
+        </ul>
       </nav>
+    </label>
   
    
-    <div class = "home-main">
-        <div class = "main-logo">
+    <div class = "main">
+        <div class = "logo">
             <img class = "logo-black" src = "Images/full logo black  cropped.png" alt = "Logo" width = "280" height = "175">
         </div>
     </div>
@@ -51,9 +73,9 @@
     </div>
     <div>
       <h2>About me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Welcome to Faith Clayton Photography. I am a professional photographer based in the UK, but I photograph natural beauty from all over the world.  I appreciate nature in all her forms, including: land, air and sea.</p>
       <br>
-      <p>Nulla aliquet enim tortor at. Magna etiam tempor orci eu. Enim eu turpis egestas pretium. Laoreet suspendisse interdum consectetur libero id. Eu augue ut lectus arcu. Aliquam id diam maecenas ultricies mi eget mauris. Massa massa ultricies mi quis hendrerit dolor magna. Amet commodo nulla facilisi nullam. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Duis convallis convallis tellus id interdum. In mollis nunc sed id semper risus. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Nisl rhoncus mattis rhoncus urna neque viverra justo. Aenean vel elit scelerisque mauris. Risus feugiat in ante metus dictum at tempor commodo.</p>
+      <p>If you would like to view my work, please check out my gallery.  You can also purchase prints of some of my work from my shop.  If you have any queries or concerns regarding the shop, please also contact me using the form below. I am available for freelance work - please get in touch using the contact box below.</p>
     </div>
     <div>
       <h2>Contact me</h2>
@@ -75,14 +97,15 @@
     
 
 </main>
+    
 <footer id="footer" class="menu-section">
 
-  <nav id="social-menu" class="social-menu menu" role="navigation">
+  <nav id="social-menu" class="social-menu" role="navigation">
       <ul>
-        <li><a href="http://instagram.com" target="blank"><span class="screen-reader-text">Instagram</span></a></li>
-        <li><a href="http://facebook.com" target="blank"><span class="screen-reader-text">Facebook</span></a></li>
-        <li><a href="http://twitter.com" target="blank"><span class="screen-reader-text">Twitter</span></a></li>
-        <li><a href="http://linkedin.com" target="blank"><span class="screen-reader-text">LinkedIn</span></a></li>
+        <li><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+        <li><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+        <li><a href="http://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+        <li><a href="http://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
         
       </ul>
   </nav>

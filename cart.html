@@ -28,18 +28,38 @@
 
   <!-- main-menu -->
 
-    <nav class="topnav" role="navigation">
-      <a href="index.html">Home</a> 
-      <a href= "Galleryc.html">Gallery</a> 
-      <a href="shop.html">Shop</a>
-      <a href="Biocontact.html">Contact</a> 
-      <a href="cart.html" class="active">
-        <div class="cart">
-          <i class="bi bi-cart2"></i>
-          <div id="cartAmount" class="cartAmount">0</div>
-        </div>
-      </a>
+  <nav id = "main-menu" class="topnav" role="navigation">
+    <a href="index.html">Home</a> 
+    <a href="Galleryc.html">Gallery</a> 
+    <a href="shop.html">Shop</a>
+    <a href="Biocontact.html">Contact</a> 
+    <a class = "active" href="cart.html" style="float: none; padding: 0px;">
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+    </a>
+  </nav>
+  
+  <input type="checkbox" id="hamburger-input" class="burger-shower" />
+  <label id="hamburger-menu" for="hamburger-input">
+    <nav id="sidebar-menu">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="Galleryc.html">Gallery</a> </li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="Biocontact.html">Contact</a> </li>
+        <li><a class = "active" href="cart.html" style="float: none; padding: 0px;">
+          <div class="cart">
+            <i class="bi bi-cart2"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+          </div>
+          </a>
+        </li>
+      </ul>
     </nav>
+  </label>
 
   <!-- header-section -->
   <header class="header-background">

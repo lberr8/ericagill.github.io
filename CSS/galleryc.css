@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
@@ -21,25 +22,6 @@
     cursor: pointer;
   }
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-
-
-
   @media (max-width: 750px) {
     .prev,
     .next {

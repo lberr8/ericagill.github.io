@@ -3,6 +3,21 @@
     justify-content:center;
 }
 
+  /* sets background image and colour */
+  .main {
+    background-image: url("/Images/Faith-Image-Home.jpg");
+    background-color: #030303;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+   }
+
+      /* moves logo down on page by adding padding */
+  .logo {
+    padding: 0px 30px 500px 30px;
+  }
+
+
 p {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif, sans-serif;
