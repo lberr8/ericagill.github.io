@@ -262,7 +262,7 @@ Styles that apply to the Footer with social media menu
 /* link to the the generic site, add individual's profile link */
 
 
-.social-menu li a[href*="facebook.com"]:before{content:"\f09a"}
+.social-menu li a[href*="facebook.com"]:before {content:"\f09a";}
 
 .social-menu li a[href*="instagram.com"]::before { content: '\f16d'; }
 
