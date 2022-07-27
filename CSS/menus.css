@@ -215,6 +215,16 @@ body {
   }
 }
 
+.header-background {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+
 /*--------------------------------------------------------------
 Styles that apply to the Footer with social media menu 
 --------------------------------------------------------------*/
