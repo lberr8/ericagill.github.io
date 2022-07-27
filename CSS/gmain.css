@@ -6,7 +6,7 @@ body {
 }
 
 footer {
-    padding: 40px;
+    padding: 40px 0px;
     width: 100%;
 }
 
@@ -22,54 +22,10 @@ h2 {
     font-size: 35px;
     text-align: center;
   }
+ 
 
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    z-index: 1;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Raleway', sans-serif;
-    font-style: bold;
-  }
-
-   /* Change the color of links on hover */
-   .topnav a:hover {
-    background-color: rgb(88, 88, 88);
-    color: rgb(255, 255, 255);
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #f1f1f1;
-    color: rgb(0, 0, 0);
-  }
-
-    /* Style the search box inside the navigation bar
-.topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-    font-family: 'Raleway', sans-serif;
-    font-style: bold;
-  } */
-
-    /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+    /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally 
     @media screen and (max-width: 600px) {
         .topnav a {
           float: none;
@@ -81,8 +37,9 @@ h2 {
         }
         /* .topnav input[type=text] {
           border: 1px solid #ccc;
-        } */
-      }
+        }
+      } */
+
 
     /* Centres logo */
         .main-logo {
@@ -123,18 +80,10 @@ h2 {
         font-size: 20px;
       }
 
-      /* .gallery-images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       } */
-    
-       /* .g-image {
-        padding: 5px 5px 5px 5px;
-       } */
+      
        
 
-/* 
+ 
 
 
 /*--------------------------------------------------------------
@@ -225,45 +174,46 @@ Header styles
 /*--------------------------------------------------------------
 Styles that apply to the Footer with social media menu 
 --------------------------------------------------------------*/
-.menu-section {
+
+/* .menu-section { 
 	border-bottom: 1px solid hsl(0, 0%, );
     font-family: 'Raleway', sans-serif;
     background-color: #333;
-}
+}*/
 
-.menu ul {
+/* .menu ul { 
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	background-color: #333;
-}
+} */
 
-.menu li a {
+/* .menu li a { 
 	display: block;
 	text-decoration: none;
 	color: white;
     padding: 14px;
-}
+ }  */
 
-.menu li a:hover {
+/* .menu li a:hover { 
 	background:rgb(88, 88, 88);
-}
+}*/
 
-menu li a.active {
+/* .menu li a.active { 
     background-color: #f1f1f1;
     color: rgb(0, 0, 0);
-}
+} */
 
-.social-menu li a:before {
+/* .social-menu li a:before { 
     font-family: 'Fontawesome';
     -webkit-font-smoothing: antialiased;
     content: '\f08e';
-}
+} */
 
 /* link to the the generic site, add individual's profile link */
 
 
-.social-menu li a[href*="facebook.com"]::before { content: '\f09a'; }
+/* .social-menu li a[href*="facebook.com"]::before { content: '\f09a'; }
 
 .social-menu li a[href*="instagram.com"]::before { content: '\f16d'; }
 
@@ -274,5 +224,38 @@ menu li a.active {
 .social-menu ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end; /* change this if we want it centered */
+    justify-content: flex-end; /* change this if we want it centered
+} */
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
 }
