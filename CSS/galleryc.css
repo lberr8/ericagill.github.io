@@ -107,7 +107,7 @@
 /* 12 columns 2 rows 6 columns side by side */
 .column {
   float: left;
-  width: 16.66%;
+  width: 8.33%;
 }
 
 /* added 25/07 images for small screen */
