@@ -6,7 +6,7 @@ body {
 }
 
 footer {
-    padding: 40px 0px;
+    padding-top: 40px;
     width: 100%;
 }
 
@@ -23,8 +23,6 @@ h2 {
     text-align: center;
   }
  
-
-
     /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally 
     @media screen and (max-width: 600px) {
         .topnav a {
@@ -79,12 +77,6 @@ h2 {
         font-style: bold;
         font-size: 20px;
       }
-
-      
-       
-
- 
-
 
 /*--------------------------------------------------------------
 Header styles 
@@ -171,61 +163,6 @@ Header styles
     border-radius: 15px;
 }
 
-/*--------------------------------------------------------------
-Styles that apply to the Footer with social media menu 
---------------------------------------------------------------*/
-
-/* .menu-section { 
-	border-bottom: 1px solid hsl(0, 0%, );
-    font-family: 'Raleway', sans-serif;
-    background-color: #333;
-}*/
-
-/* .menu ul { 
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	background-color: #333;
-} */
-
-/* .menu li a { 
-	display: block;
-	text-decoration: none;
-	color: white;
-    padding: 14px;
- }  */
-
-/* .menu li a:hover { 
-	background:rgb(88, 88, 88);
-}*/
-
-/* .menu li a.active { 
-    background-color: #f1f1f1;
-    color: rgb(0, 0, 0);
-} */
-
-/* .social-menu li a:before { 
-    font-family: 'Fontawesome';
-    -webkit-font-smoothing: antialiased;
-    content: '\f08e';
-} */
-
-/* link to the the generic site, add individual's profile link */
-
-
-/* .social-menu li a[href*="facebook.com"]::before { content: '\f09a'; }
-
-.social-menu li a[href*="instagram.com"]::before { content: '\f16d'; }
-
-.social-menu li a[href*="twitter.com"]::before { content: '\f099'; }
-
-.social-menu li a[href*="linkedin.com"]::before { content: '\f0e1'; }
-
-.social-menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end; /* change this if we want it centered
-} */
 
 /*--------------------------------------------------------------
 Accessibility
